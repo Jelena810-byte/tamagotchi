@@ -81,3 +81,7 @@ button:active {
   visibility: hidden;
 }
 
+.gone {
+   display: none;
+
+}

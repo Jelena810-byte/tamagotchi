@@ -1,17 +1,14 @@
-/*-------------------------------- Constants --------------------------------*/
+/*---------------------------- Variables (state) ----------------------------*/
+
 const state = {
   boredom: 0,
   hunger: 0,
-  sleepiness: 0 
-
+  sleepiness: 0
 };
 
 let timer = null;
 
 let gameOver = false;
-
-/*---------------------------- Variables (state) ----------------------------*/
-
 
 
 /*------------------------ Cached Element References ------------------------*/
@@ -24,7 +21,7 @@ const hungerStatEl = document.getElementById('hunger-stat');
 
 console.log('hungerStateEl', hungerStatEl)
 
-const sleepinessStatEl = document.getElementById('sleep');
+const sleepinessStatEl = document.getElementById('sleepiness-stat');
 
 console.log('sleepinessStatEl', sleepinessStatEl)
 
@@ -33,11 +30,13 @@ const playBtnEl = document.getElementById('play');
 const feedBtnEl = document.getElementById('feed');
 const sleepBtnEl = document.getElementById('sleep')
 
-const gameMessageEl = document.getElementById('game-message');
+
+const gameMessageEl = document.getElementById('message');
 console.log('gameMessageEl', gameMessageEl)
 
-const resetBtnEl= document.getElementById('reset');
-console.log('resetBtnEl')
+const resetBtnEl= document.querySelector('#restart');
+
+
 /*-------------------------------- Functions --------------------------------*/
 
 function init() {
@@ -83,12 +82,12 @@ console.log('Rendering game state...')
 
 function updateStates() {
 
-state.boredom +=
-Math.floor(Math.random() * 4);
+state.boredom +=Math.floor(Math.random() * 4);
 state.hunger += Math.floor(Math.random() * 4);
-state.hunger += Math.floor(Math.random() * 4);
+state.sleepiness += Math.floor(Math.random() * 4);
 
 }
+
 function render() {
 boredomStatEl.textContent = state.boredom;
 hungerStatEl.textContent = state.hunger;
@@ -100,6 +99,49 @@ sleepinessStatEl.textContent = state.sleepiness;
 
 }
 console.log()
+
+function playBtnClick() {
+    console.log("clicked")
+    state.boredom = 0;
+    render()
+
+
+playBtnEl.addEventListener('click', playBtnClick);
+}
+
+function hunger() {
+    state.hunger = 0;
+    render()
+
+
+feedBtnEl.addEventListener('click', hunger);
+}
+
+function sleepiness() {
+    state.sleepiness = 0;
+    render()
+
+
+sleepBtnEl.addEventListener('click', sleepiness);
+}
+
+
+
+function init() {
+   resetBtnEl.classList.add('hidden');
+   gameMessageEl.classList.add('hidden');
+
+
+   state.hunger = 0;
+   state.boredom = 0;
+   state.sleepiness = 0;
+
+   render()
+}
+
+resetBtnEl.addEventListener('click', init);
+
+
 
 
 
