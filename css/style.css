@@ -80,8 +80,3 @@ button:active {
 .hidden {
   visibility: hidden;
 }
-
-.gone {
-   display: none;
-
-}
