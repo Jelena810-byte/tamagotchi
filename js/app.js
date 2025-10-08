@@ -1,6 +1,7 @@
 /*---------------------------- Variables (state) ----------------------------*/
 
 let state = {
+
     boredom: 0,
     hunger: 0,
     sleepiness: 0
@@ -36,7 +37,7 @@ const resetBtnEl = document.getElementById('restart');
 
 
 function init() {
- // resetBtnEl.addEventListener("click", init);
+   
     resetBtnEl.classList.add("hidden");
     gameMessageEl.classList.add("hidden");
     state.boredom = 0;
@@ -62,7 +63,7 @@ function render() {
     sleepinessStatEl.textContent = state.sleepiness;
 
     if (gameOver) {
-        gameMessageEl.textContent = "Game Over! Your pet needs too much care."
+        gameMessageEl.textContent = "Game Over! Oh no! You lose!"
         resetBtnEl.classList.remove('hidden');
         gameMessageEl.classList.remove('hidden');
         clearInterval(timer);
@@ -120,6 +121,15 @@ sleepBtnEl.addEventListener('click', sleepBtnClick);
 
 
 init()
+
+resetBtnEl.addEventListener('click', restartGame );
+
+function restartGame() {
+
+    clearInterval(timer);
+    gameOver = false;
+    init();
+}
 
 
 

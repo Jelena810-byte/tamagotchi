@@ -3,10 +3,11 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-size: 16px;
   min-height: 100vh;
-  background-color: #e6e6e6;
+  background-color: yellow;
   font-family: system-ui, sans-serif;
 }
 
@@ -21,12 +22,12 @@ h2 {
 
 /* headings */
 header {
-  text-align: center;
+  text-align: center; 
 }
 
 /* layout */
 main {
-  max-width: 90vw;
+  max-width: 150vw;
   margin: 0 auto;
 }
 
@@ -57,8 +58,8 @@ button {
   border: 0;
   border-radius: 0.5rem;
   
-  color: white;
-  background-color: #4597f8;
+  color: orangered;
+  background-color: black;
   transition: background-color 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -72,8 +73,8 @@ button:active {
 
 /* images */
 .game-graphic {
-  max-height: 33vmin;
-  margin-bottom: 32px;
+  max-height: 60vmin;
+  margin-bottom: 40px;
 }
 
 
