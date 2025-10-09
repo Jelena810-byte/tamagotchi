@@ -1,4 +1,4 @@
-🎮 About the Game
+🎮 About the Game:
 
 
 1. Tamagochi is a one-player game.
@@ -14,7 +14,7 @@
 
 
  
-🧩 Features
+🧩 Features:
 
  * 🍼 Feed your pet to keep its hunger down
 
@@ -27,22 +27,28 @@
 * 💖 Cute graphics & animations with a playful design
 
 
-🧠 Technologies Used
+🧠 Technologies Used:
 
-* HTML5 – for structure
+* HTML – for structure
 
-* CSS3 – for layout and playful visuals
+* CSS – for layout and playful visuals
 
 * JavaScript – for interactivity and logic
 
-🚀 How to Play
+🚀 How to Play:
 
 * Open the game in your browser.
 
 * Watch your Tamagotchi’s status indicators.
 
-* Use the buttons to feed, play, or rest your pet.
+* Use the buttons to feed, play or rest your pet.
 
 * Try to keep all stats in balance — and see how long your Tamagotchi can stay alive!
+
+* If you don't follow and keep the balance in all three steps (play, feed, sleep), you will lose the game.
+
+* The game is set on the value from 0 up to 10. If some of the boxes reaches more than 10, the game is over.
+
+
 
 
