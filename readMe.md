@@ -1,6 +1,6 @@
-🎮 About the Game:
-
 ![Tamagatchi Screenshot](./assets/tamagotchi_screenshot.png)
+
+## 🎮 About the Game:
 
 1. Tamagochi is a one-player game.
 
@@ -12,10 +12,10 @@
 
 5.  To keep the creature happy we must keep three stats within a given range- greater than 0 and less than 10.
 
-
+[Play the Game Here](https://jelena810-byte.github.io/tamagotchi/)
 
  
-🧩 Features:
+## 🧩 Features:
 
  * 🍼 Feed your pet to keep its hunger down
 
@@ -28,7 +28,7 @@
 * 💖 Cute graphics & animations with a playful design
 
 
-🧠 Technologies Used:
+## 🧠 Technologies Used:
 
 * HTML – for structure
 
@@ -36,7 +36,7 @@
 
 * JavaScript – for interactivity and logic
 
-🚀 How to Play:
+## 🚀 How to Play:
 
 * Open the game in your browser.
 
