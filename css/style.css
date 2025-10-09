@@ -13,21 +13,25 @@ body {
 
 /* element styles */
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
+  font-family:'Courier New', Courier, monospace;
+
 }
 
 h2 {
-  font-size: 1.7rem;
+  font-size: 1,5rem;
+  font-family:'Times New Roman', Times, serif;
 }
 
 /* headings */
 header {
-  text-align: center; 
+  text-align: center;  
 }
+
 
 /* layout */
 main {
-  max-width: 150vw;
+  max-width: 110vw;
   margin: 0 auto;
 }
 
@@ -51,9 +55,9 @@ main {
 
 /* button styling*/
 button {
-  padding: 1.5rem;
+  padding: 1rem;
   line-height: 1em;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 
   border: 0;
   border-radius: 0.5rem;
@@ -64,11 +68,11 @@ button {
 }
 
 button:hover {
-  background-color: #3880d7;
+  background-color: gray;
 }
 
 button:active {
-  background-color: #2e6bb6;
+  background-color: gainsboro;
 }
 
 /* images */

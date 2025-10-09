@@ -133,6 +133,8 @@ function restartGame() {
 
 
 
+
+
 // 1) Define the required variables used to track the state of the game.
 
 // 2) Store cached element references.
