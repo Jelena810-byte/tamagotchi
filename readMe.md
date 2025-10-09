@@ -1,5 +1,6 @@
 🎮 About the Game:
 
+![Tamagatchi Screenshot](./assets/tamagotchi_screenshot.png)
 
 1. Tamagochi is a one-player game.
 
